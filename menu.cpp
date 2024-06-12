@@ -17,7 +17,6 @@ void Menu::display_mst_menu(){
     cout << "2) Wygeneruj graf losowo\n";
     cout << "3) Wyświetl graf listowo i macierzowo\n";
     cout << "4) Algorytm 1 (Prima) wyniki\n";
-    cout << "5) Algorytm 2 (Kruskala) wyniki\n";
     cout << "0) Wyjscie - zmiana problemu\n";
     cin >> second_choice;
 }
@@ -28,7 +27,6 @@ void Menu::display_path_menu(){
     cout << "2) Wygeneruj graf losowo\n";
     cout << "3) Wyswietl graf listowo i macierzowo\n";
     cout << "4) Algorytm 1 (Dijkstry) wyniki\n";
-    cout << "5) Algorytm 2 (Bellmana-Forda) wyniki\n";
     cout << "0) Wyjscie - zmiana problemu\n";
     cin >> second_choice;
 }
@@ -58,8 +56,6 @@ void Menu::run(){
                     break;
                 case '4': // Algorytm 1 (Prima) 
                     break;
-                case '5': // Algorytm 2 (Kruskala)
-                    break;
                 default:
                     cout << "Podaj poprawna opcje...\n";
                     break;
@@ -81,8 +77,6 @@ void Menu::run(){
                 case '3': // Wyświetl 
                     break;
                 case '4': // Algorytm 1 (Disjktry) 
-                    break;
-                case '5': // Algorytm 2 (Bellmana-Forda)
                     break;
                 default:
                     cout << "Podaj poprawna opcje...\n";
