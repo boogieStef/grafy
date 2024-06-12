@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(grafy main.cpp
         menu.cpp
-        menu.h)
+        menu.h
+        graph.h
+        graph.cpp)

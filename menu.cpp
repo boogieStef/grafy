@@ -1,5 +1,7 @@
 #include "menu.h"
 #include <iostream>
+#include <string>
+#include "graph.h"
 
 using namespace std;
 
@@ -49,6 +51,11 @@ void Menu::run(){
                 case '0': // Wyjscie
                     break;
                 case '1': // Wczytaj z pliku
+                    this->G = new Graph(5, 5);
+                    //cout << "Podaj nazwe pliku: ";
+                    this->file_name = "test.txt";
+                    G->read_from_file(file_name, true);
+                    G->print_graph();
                     break;
                 case '2': // Wygeneruj losowo
                     break;
